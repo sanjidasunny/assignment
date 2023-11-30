@@ -128,7 +128,7 @@ class BuyNowPage extends StatelessWidget {
             const Spacer(),
 
             ElevatedButton(
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.green[300]),
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.green[200]),
 
               onPressed: () {
 

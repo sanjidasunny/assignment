@@ -114,7 +114,7 @@ class BuyNowPage extends StatelessWidget {
             Text('Description: $description',style: TextStyle(fontSize: 20,fontWeight: FontWeight.w300)),
             Text('Price: $rating',style: TextStyle(fontSize: 20,fontWeight: FontWeight.w300)),
             DropdownButton<String>(
-              items: ['2 pieces', '3 pieces', '4 pieces']
+              items: ['1 pieces', '2 pieces', '4 pieces']
                   .map((String value) => DropdownMenuItem<String>(
                 value: value,
                 child: Text(value),

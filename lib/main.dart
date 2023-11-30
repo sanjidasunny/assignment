@@ -17,7 +17,7 @@ class FirstPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.red[400],
+      backgroundColor: Colors.red[200],
       appBar: PreferredSize(
           preferredSize: const Size.fromHeight(70.0), // here the desired height
           child: AppBar(
@@ -32,8 +32,8 @@ class FirstPage extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(20.0),
         children: const [
-          BookCard('Harry Potter PART 1', 'J.K ROWLING', '4.7', 'https://i.ibb.co/mbTcrwG/1.jpg','magic story starting'),
-          BookCard('Harry Potter PART 2', 'J.K ROWLING', '4.7', 'https://i.ibb.co/sCFqGsj/2.jpg','welcome to the hallway'),
+          BookCard('Harry Potter PART 1', 'J.K ROWLING', '4.7', 'https://i.ibb.co/mbTcrwG/1.jpg','Its a magical story about a boy named Harry Potter'),
+          BookCard('Harry Potter PART 2', 'J.K ROWLING', '4.7', 'https://i.ibb.co/sCFqGsj/2.jpg','welcome Harry Potter to the Hoqwarts where he will face many challenges'),
 
         ],
       ),
@@ -66,7 +66,7 @@ class BookCard extends StatelessWidget {
         ),
         trailing: ElevatedButton.icon(
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.green[400], // Background color
+            backgroundColor: Colors.green[200], // Background color
           ),
           onPressed: () {
             Navigator.push(
@@ -128,7 +128,7 @@ class BuyNowPage extends StatelessWidget {
             const Spacer(),
 
             ElevatedButton(
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.green[200]),
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.green[300]),
 
               onPressed: () {
 

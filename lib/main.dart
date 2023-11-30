@@ -96,7 +96,7 @@ class BuyNowPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepOrange[100],
+      backgroundColor: Colors.deepOrange[400],
       appBar: AppBar(
         backgroundColor: Colors.indigoAccent[200],
         title: const Text('Buy Now'),

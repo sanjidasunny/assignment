@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: FirstPage(),
+
     );
   }
 }
@@ -18,11 +19,14 @@ class FirstPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.red[200],
+
       appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(70.0), // here the desired height
+
+          preferredSize: const Size.fromHeight(120.0), // here the desired height
           child: AppBar(
+            toolbarHeight: 220,
             title: const Text(
-                'Book List',
+                'Book List!',
                 style: TextStyle(fontSize: 50,fontWeight: FontWeight.w500)
             ),
             centerTitle: true,
@@ -30,9 +34,12 @@ class FirstPage extends StatelessWidget {
           )
       ),
       body: ListView(
+
         padding: const EdgeInsets.all(20.0),
         children: const [
+          const SizedBox(height: 30),
           BookCard('Harry Potter PART 1', 'J.K ROWLING', '4.7', 'https://i.ibb.co/mbTcrwG/1.jpg','Its a magical story about a boy named Harry Potter'),
+          const SizedBox(height: 30),
           BookCard('Harry Potter PART 2', 'J.K ROWLING', '4.7', 'https://i.ibb.co/sCFqGsj/2.jpg','welcome Harry Potter to the Hoqwarts where he will face many challenges'),
 
         ],
@@ -96,17 +103,20 @@ class BuyNowPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepOrange[400],
+      backgroundColor: Colors.deepOrange[200],
       appBar: AppBar(
         backgroundColor: Colors.indigoAccent[200],
-        title: const Text('Buy Now'),
+        toolbarHeight: 120,
+        title: const Text('Buy Now',style: TextStyle(fontSize: 30,fontWeight: FontWeight.normal)),
 
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Column(
+
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+
             Image.network(img),
             Text('Book Name: $bookName',style: TextStyle(fontSize: 20,fontWeight: FontWeight.w300)),
 
@@ -123,7 +133,7 @@ class BuyNowPage extends StatelessWidget {
               onChanged: (String? value) {
                 // Handle dropdown value change
               },
-              hint: const Text('Select an option',style: TextStyle(fontWeight: FontWeight.normal),),
+              hint: const Text('Select an option',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black),),
             ),
             const Spacer(),
 

@@ -28,10 +28,11 @@ class FirstPage extends StatelessWidget {
             toolbarHeight: 220,
             title: const Text(
                 'Book List',
-                style: TextStyle(fontSize: 50,fontWeight: FontWeight.w500)
+                style: TextStyle(fontSize: 60,fontWeight: FontWeight.w500)
             ),
             centerTitle: true,
             backgroundColor: Colors.blueAccent[100],
+
           )
       ),
       body: ListView(
@@ -61,7 +62,7 @@ class BookCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Colors.yellow[200],
+      color: Colors.yellow[300],
       child: ListTile(
         leading: Image.network(img),
         title: Text(bookName,style: TextStyle(fontSize: 15,fontWeight: FontWeight.normal)),

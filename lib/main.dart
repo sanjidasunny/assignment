@@ -27,7 +27,7 @@ class FirstPage extends StatelessWidget {
           child: AppBar(
             toolbarHeight: 220,
             title: const Text(
-                'Book List!',
+                'Book List',
                 style: TextStyle(fontSize: 50,fontWeight: FontWeight.w500)
             ),
             centerTitle: true,
